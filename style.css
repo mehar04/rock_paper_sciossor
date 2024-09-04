@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;0,600;1,500&display=swap");
+
+body {
+    background: rgb(43,42,43);
+    background: radial-gradient(circle, rgba(43,42,43,1) 0%, rgba(42,39,41,0.9136029411764706) 4%, rgba(94,99,105,1) 100%);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #1d1e22;
+  margin-top: -10px;
+  padding: 23px 0;
+  color: whitesmoke;
+  font-family: "Asap", sans-serif;
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: center;
+    margin-top: -22px;
+    border: 2px solid #333642;
+    padding: 14px;
+    height: 5%;
+    border-width: 5px 650px;
+    color: #333642;
+    font-family: "Asap", sans-serif;
+    font-size: 30px;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    width: 6%;
+}
+
+.user {
+  color: white;
+  position: relative;
+  left: -90px;
+  font-size: 18px;
+  top: 28px;
+}
+
+.comp {
+  color: white;
+  position: relative;
+  right: -95px;
+  font-size: 18px;
+  bottom: 24px;
+}
+
+.userInput {
+  font-weight: bold;
+  font-family: "Asap", sans-serif;
+  position: absolute;
+  left: 200px;
+  top: 105px;
+  font-size: 25px;
+  color: white;
+}
+
+.compInput {
+  font-weight: bold;
+  font-family: "Asap", sans-serif;
+  position: absolute;
+  right: 200px;
+  top: 105px;
+  font-size: 25px;
+  color: white;
+}
+
+.moves {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: whitesmoke;
+  font-family: "Asap", sans-serif;
+  font-size: 30px;
+  margin-top: 15px;
+  margin-left: 5px;
+  padding: 60px;
+}
+
+.r {
+  border: 1px solid white;
+  border-width: 3px;
+  border-radius: 50%;
+  margin-right: 20px;
+  border-right: none;
+}
+
+.r:hover {
+  border-color: #dfabb3;
+  animation: spin 10s ease infinite;
+  border-width: 8px;
+}
+
+.p {
+  padding: 2px;
+  border: 1px solid white;
+  border-width: 3px;
+  border-radius: 50%;
+  border-left: none;
+  border-right: none;
+}
+
+.p:hover {
+  border-color: #dfabb3;
+  animation: spin 10s ease infinite;
+  border-width: 8px;
+}
+
+.s {
+  padding: 2px;
+  border: 1px solid white;
+  border-width: 3px;
+  border-left: none;
+  border-radius: 50%;
+  margin-left: 20px;
+}
+
+.s:hover {
+  border-color: #dfabb3;
+  animation: spin 10s ease infinite;
+  border-width: 8px;
+}
+
+@keyframes spin {
+  0% {
+    border-color: #dfabb3;
+  }
+  50% {
+    border-position: 100% 50%;
+    border-color: #240b36;
+  }
+  100% {
+    border-position: 0% 50%;
+    border-color: #240b36;
+  }
+}
+
+.moveInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #1d1e22;
+  font-family: "Asap", sans-serif;
+  font-size: 40px;
+  margin-top: 25px;
+  margin-left: 5px;
+  color: white;
+}
+
+
+
